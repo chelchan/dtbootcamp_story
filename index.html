@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>Anxiety Ridden</title>
+</head>
+<body>
+<div class="box">
+<h1>What makes me anxious:</h1>
+<p>
+	<div>
+		<form id="link">
+			<select multiple="multiple" class="triggers">
+				<option value="plane_rides.html">plane rides</option>
+				<option value="train_rides.html">train rides</option>
+				<option value="ambulance.html">ambulance</option>
+				<option value="crowds.html">crowds</option>
+			</select>
+			<div class="button">
+				<input class="SubmitButton" type="submit" name="SUBMITBUTTON" value="Get nervous, bitch!" style="font-family: courier"/> 
+				<!-- inline style doesn't work -->
+			</div>
+		</form>
+	</div>
+</div>
+</p>
+	<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+	<script>
+		$('#link').on('submit', function (e) {
+			e.preventDefault();
+			var $form = $(this),
+			$select = $form.find('select'),
+			links = $select.val();
+			if (links.length > 0) {
+				for (i in links) {
+					link = links[i];
+					window.open(link, "_self");
+				}
+			}
+		});
+	</script>
+</body>
+</html>

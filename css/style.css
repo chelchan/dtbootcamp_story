@@ -1,0 +1,59 @@
+body, html {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	background-image: url("../images/background.gif");
+	background-size: cover;
+	/*background-color: black;*/
+	font-family: courier;
+	text-align: center;
+}
+
+h1 {
+	font-family: courier;
+	font-size: 30px;
+	color: white;
+	font-weight: normal;
+}
+
+.box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.triggers {
+	font-family: courier;
+	font-size: 20px;
+	text-align: center;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+option:hover, option:active { 
+	background: pink;
+}
+/*option:active doesn't work*/
+
+input {
+	font-family: courier;
+	background-color: rgb(255, 255, 254);
+	padding: 5px;
+}
+/*the only way I can trick the font property*/
+
+.button {
+	/*font-family: courier!important;*/
+	text-align: center;
+	margin: 20px;
+}
+/*font-family value doesn't work*/
+
+/*.SubmitButton {
+	font-family: courier!important;
+}*/
+/*doesn't work*/

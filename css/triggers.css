@@ -1,0 +1,42 @@
+body, html {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	background-color: white;
+	font-family: courier;
+
+}
+
+.box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.message {
+	font-family: courier;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 20px;
+}
+
+.goback {
+	font-family: courier;
+	text-align: center;
+	margin: 20px;
+	padding: 5px;
+}
+
+img {
+	/*	ovject-fit: cover;*/
+	max-width: 100%;
+	height: auto;
+	/*	width: auto;*/
+}
+
