@@ -60,10 +60,15 @@ input {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 15px;
 	border-style: none;
-	background-color: pink;
+	background-color:#ff4d58;
 	padding: 10px;
 }
 /*the only way I can trick the font property*/
+
+input:hover {
+	cursor: pointer;
+	background-color:#ff303d;
+}
 
 div.button{
 	margin: 20px;

@@ -57,7 +57,12 @@ button#goback {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 15px;
 	border-style: none;
-	background-color: pink;
+	background-color:#ff4d58;
 	padding: 10px;
+}
+
+button#goback:hover {
+	cursor: pointer;
+	background-color:#ff303d;
 }
 
