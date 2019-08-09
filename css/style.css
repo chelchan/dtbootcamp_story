@@ -52,7 +52,6 @@ option:hover, option:checked {
 	opacity: 1;
 	color: white;
 	background: black;
-	transform: scale(1.05, 1.05)
 }
 /*option:checked doesn't work*/
 
@@ -68,6 +67,7 @@ input {
 input:hover {
 	cursor: pointer;
 	background-color:#ff303d;
+	transform: scale(1.05, 1.05);
 }
 
 div.button{
