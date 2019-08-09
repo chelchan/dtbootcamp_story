@@ -1,3 +1,7 @@
+* {
+	font-family: 'Roboto Mono', monospace;
+}
+
 body, html {
 	height: 100%;
 	margin: 0;
@@ -6,54 +10,67 @@ body, html {
 body {
 	background-image: url("../images/background.gif");
 	background-size: cover;
-	/*background-color: black;*/
-	font-family: courier;
+	font-family: 'Roboto Mono', monospace;
 	text-align: center;
 }
 
 h1 {
-	font-family: courier;
+	font-family: 'Roboto Mono', monospace;
 	font-size: 30px;
 	color: white;
 	font-weight: normal;
 }
 
-.box {
+div.box {
 	position: absolute;
-	top: 50%;
-	left: 50%;
+	top: 50vh;
+	left: 50vw;
 	transform: translate(-50%, -50%);
 }
 
 
-.triggers {
-	font-family: courier;
+select.triggers {
+	height: 260px;
+	width: 300px;
+	font-family: 'Roboto Mono', monospace;
 	font-size: 20px;
 	text-align: center;
 	padding: 20px;
-	background-color: rgba(255, 255, 255, 0.9);
+	border-style: none;
+	background-color: rgba(255, 255, 255, 0);
 }
 
-option:hover, option:active { 
-	background: pink;
+option {
+	background-color: white;
+	border-style: none; 
+	padding: 10px;
+	margin: 10px;
+	opacity: 0.5;
 }
-/*option:active doesn't work*/
+
+option:hover, option:checked { 
+	opacity: 1;
+	color: white;
+	background: black;
+	transform: scale(1.05, 1.05)
+}
+/*option:checked doesn't work*/
 
 input {
-	font-family: courier;
-	background-color: rgb(255, 255, 254);
-	padding: 5px;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 15px;
+	border-style: none;
+	background-color: pink;
+	padding: 10px;
 }
 /*the only way I can trick the font property*/
 
-.button {
-	/*font-family: courier!important;*/
-	text-align: center;
+div.button{
 	margin: 20px;
 }
-/*font-family value doesn't work*/
 
-/*.SubmitButton {
-	font-family: courier!important;
-}*/
-/*doesn't work*/
+div.SubmitButton {
+	font-family: 'Roboto Mono', monospace;
+	text-align: center;
+}
+/*font-family value doesn't work*/
